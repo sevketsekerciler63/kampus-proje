@@ -6,11 +6,7 @@ Kampüs Proje, öğrencilerin proje çalışmalarını tek bir tarayıcıda plan
 
 ## Nasıl geliştirdim
 
-Bu proje bir ders için hazırladığım demo ve yapay zekâ kodlama asistanlarıyla birlikte geliştirildi; bunu saklamıyorum.
-
-- **Ben karar veriyorum:** problemin tanımı (öğrenci–ekip–danışman–teslim ilişkisi, genel yapılacaklar listesi değil), kapsam sınırları ve neyin gerçek, neyin demo olduğunun açıkça yazılması.
-- **Yapay zekâ üretiyor ve inceliyor:** kod, testler ve bağımsız kod incelemeleri; küçük dilimler hâlinde, önce başarısız test yazılarak ilerlendi.
-- **Doğrulama kuralı:** test, lint ve build gerçekten çalıştırılmadan "tamamlandı" yazılmaz; çalıştırılamayan şey bu README'de "doğrulanmadı" diye geçer.
+Bu, bir ders için hazırladığım bir demo. Yapay zekâ asistanıyla birlikte yazdım. Problemi ve kapsamı ben belirledim (genel bir yapılacaklar listesi değil, öğrenci–ekip–danışman–teslim ilişkisi); kodu ve testlerin çoğunu asistan yazdı. Her küçük parçadan sonra testler ve derleme çalıştırıldı. Çalıştırılamayan şeyler README'de "doğrulanmadı" diye geçiyor.
 
 ## Teknolojiler
 
