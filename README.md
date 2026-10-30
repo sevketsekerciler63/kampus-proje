@@ -1,5 +1,7 @@
 # Kampüs Proje — Öğrenci Proje ve Ekip Yönetimi (Demo)
 
+[![CI](https://github.com/sevketsekerciler63/kampus-proje/actions/workflows/ci.yml/badge.svg)](https://github.com/sevketsekerciler63/kampus-proje/actions/workflows/ci.yml)
+
 Kampüs Proje, öğrencilerin proje çalışmalarını tek bir tarayıcıda planlamayı göstermeyi amaçlayan bir **React + TypeScript demo uygulamasıdır**. Proje, ekip, görev, aşama, dönem teslimi ve haftalık rapor akışları yerel olarak yönetilir.
 
 > Bu uygulama resmî bir üniversite sistemi değildir. Gerçek kullanıcı hesabı, danışman hesabı, sunucu, veritabanı, uzaktan teslim veya yetkilendirme içermez.
