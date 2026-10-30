@@ -142,3 +142,7 @@ npm run test:e2e:demo
 - Gerçek danışman hesabı, bildirim, uzaktan onay veya resmî teslim işlemi yoktur.
 - Çok kullanıcılı eşzamanlı çalışma ve cihazlar arası veri paylaşımı yoktur.
 - E2E testleri sistemde kurulu Google Chrome gerektirir; GitHub Actions iş akışı lint, birim testleri ve production build'i çalıştırır, E2E testlerini çalıştırmaz.
+
+## Lisans
+
+[MIT](LICENSE).
