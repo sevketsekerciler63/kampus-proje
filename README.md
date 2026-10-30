@@ -48,7 +48,7 @@ npm run build
 npm run test:e2e
 ```
 
-31 Ekim 2026'da bu çalışma kopyasında **137 birim/bileşen testi**, **2 gerçek Chrome E2E testi**, lint ve production build başarıyla tamamlandı. Bu çalıştırmada `npm audit` yeniden koşulmadı; 6 Ekim 2026 kaydına göre sonuç 0 güvenlik açığıydı.
+31 Ekim 2026'da bu çalışma kopyasında **137 birim/bileşen testi**, **2 gerçek Chrome E2E testi**, lint ve production build başarıyla tamamlandı. Aynı gün `npm audit` iki yüksek seviye uyarı verdi (`vite` 8.3.0–8.3.2 ve `undici`); `npm audit fix` ile `vite` 8.3.5 ve `undici` 8.12.3'e güncellendi, testler ve build yeniden geçti ve sonuç 0 güvenlik açığı oldu. Uyarılar 6 Ekim'deki "0 açık" kaydından sonra yayımlanmıştı, bu yüzden bu sayı zamanla değişebilir.
 
 `src/App.test.tsx` içindeki teslim ve gecikme senaryoları sabit tarihler kullandığı için testler yalnız `Date` değerini 6 Ekim 2026'ya sabitler; aksi halde testler zamanla kırılır.
 
