@@ -62,6 +62,24 @@ npm run test:e2e
 
 Playwright yapılandırması sistemde kurulu Google Chrome kanalını kullanır. Bu çalışma ortamındaki son koşuda iki senaryo da başarılıdır.
 
+## Hata raporlayıcı (E2E testleri için)
+
+Playwright testi başarısız olduğunda `test-reports/hata-raporu.md` dosyası üretilir. Her başarısız test için:
+
+- **Kural tabanlı tanı:** hata metni sekiz kategoriden birine ayrılır (öğe bulunamadı, birden fazla eşleşme, beklenti uyuşmazlığı, sunucuya ulaşılamadı vb.), seçici ayıklanır ve ilk bakılacak yer önerilir. Bu kısım API anahtarı gerektirmez ve birim testleriyle doğrulanır (`tools/failure-report/`).
+- **Kanıt:** hata metni, kod çerçevesi, ekran görüntüsü ve izleme (trace) dosyası bağlantıları.
+- **Yeniden çalıştırma komutu:** yalnızca o testi çalıştıran hazır komut.
+
+Raporu görmek için bilerek kırık senaryoları çalıştırın (ana test paketine dahil değildir):
+
+```bash
+npm run test:e2e:demo
+```
+
+Örnek çıktı: [docs/ornek-hata-raporu/hata-raporu.md](docs/ornek-hata-raporu/hata-raporu.md)
+
+**İsteğe bağlı yapay zekâ özeti:** `ANTHROPIC_API_KEY` ortam değişkenini ayarlayıp `FAILURE_REPORT_AI=1` ile çalıştırırsanız her hata için Claude kısa bir Türkçe özet ekler (varsayılan model `claude-opus-5-5`, `FAILURE_REPORT_MODEL` ile değiştirilebilir). Anahtar yalnızca ortamdan okunur, depoya yazılmaz; bayrak açık değilse hiçbir istek gönderilmez ve her istek ücretlidir. Bu kısım birim testlerinde **sahte (mock) yanıtla** doğrulanmıştır; gerçek API ile uçtan uca denenmedi.
+
 ## Kısa demo akışı
 
 1. **Yeni proje** oluşturun; başlık ve açıklama alanlarını doldurun.
